@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tsx scripts/registry-build.ts && next build",
     "start": "next start",
     "lint": "next lint",
     "build:registry": "tsx scripts/registry-build.ts",
@@ -28,6 +28,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "codehike": "^1.0.4",
+    "framer-motion": "^12.23.11",
     "lucide-react": "^0.475.0",
     "marked": "^15.0.7",
     "motion": "^12.4.5",

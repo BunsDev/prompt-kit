@@ -9,7 +9,7 @@ import { AnimatedBackground } from "@/components/ui/animated-background"
 import { TextMorph } from "@/components/ui/text-morph"
 import { cn } from "@/lib/utils"
 import { Github } from "lucide-react"
-import { AnimatePresence, motion } from "motion/react"
+import { AnimatePresence, motion, Transition } from "framer-motion"
 import Link from "next/link"
 import { useState } from "react"
 import { PromptInputChatGPT } from "./examples/chatgpt"
@@ -56,7 +56,7 @@ function PromptInputBasic() {
   );
 }`
 
-const MOTION_TRANSITION = {
+const MOTION_TRANSITION: Transition = {
   duration: 0.25,
   type: "spring",
   bounce: 0,
